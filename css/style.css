@@ -1,0 +1,384 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.navTop{
+    height: 30px;
+    background: #131313;
+    position: relative;
+    z-index: 2;
+}
+.navBottom{
+    width: 100%;
+    height: 45px;
+    background:#fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.navTop .firstNav{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navTop .firstNav li{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+.navTop .firstNav li a{
+    text-decoration: none;
+    color: #555;
+}
+.navTop .firstNav li a:hover{
+    color: #fff;
+}
+.navBottom .fixedNav{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoClass{
+    display: none;
+    width: 110px;
+    height: 48px;
+    background-image: url("../img/tnw.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.logoClass:hover{
+    width: 110px;
+    height: 48px;
+    background-image: url("../img/tenor.gif");
+    background-position: center;
+    background-size: cover;
+}
+.searchIcon{
+    width: 45px;
+    height: 45px;
+    border-left: 1px solid rgb(207, 207, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchIcon ul li{
+    list-style: none;
+}
+.navBottom .fixedNav .menu-toggle {
+    display: none;
+}
+.sideNav{
+    display: none;
+}
+/*
+I could not make it dropdown menu but I am gonna fix it later.
+*/
+#dropdown1{
+    display: none;
+}
+#dropdown2{
+    display: none;
+}
+.navBottom .fixedLeft li{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+.navBottom .fixedLeft li a{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+.navBottom .fixedLeft li a:hover{
+    color:black;
+}
+main{
+    border-top: 5px solid whitesmoke;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2px;
+}
+.sectionOne{
+    width: 66.6%;
+}
+.sectionSecond{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.articleOne, .articleSecond, .articleThree{
+    position: relative;
+}
+.filtre img{
+    vertical-align: middle;
+    -webkit-filter: grayscale(100%) contrast(0.9);
+    -moz-filter: grayscale(100%) contrast(0.9);
+    filter: grayscale(100%) contrast(0.9);
+}
+.filtre{
+    position: relative;
+    margin: 0;
+    display: contents;
+}
+.filtre:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+}
+.retro:after {
+    background-image: linear-gradient(325deg, #040405 20%, #ff0000 80%);
+}  
+.articleimage1{
+    height: 544px;
+}
+.articleimglogo{
+    width: 220px;
+}
+.coverLogo{
+    position: absolute;
+    background-size: contain;
+    left: 40px;
+    max-width: 50%;
+    height: 100%;
+    max-height: 112px;
+    top: 5px;
+}
+.headerOne{
+    width: 77%;
+    font-style: bold ;
+    padding: 20px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    color:#fff;
+    font-size: 36px;
+}
+.headerOne h2,h5{
+    margin: 0;
+    font-family: Shentox,sans-serif;
+    font-weight: 600;
+}
+.headerOne ul li{
+    display: inline;
+    margin: 10px;
+}
+.articleimage2, .articleimage3{
+    width: 100%;
+    height: 270px;
+}
+.headerSecond{
+    width: 90%;
+    font-style: bold ;
+    padding: 20px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    color: cornsilk;
+    font-size: 20px;
+}
+.headerSecond h2, .headerThree h2{
+    margin: 0;
+    font-family: Shentox,sans-serif;
+    font-weight: 600;
+    letter-spacing: .04em;
+}
+.headerSecond ul li, .headerThree ul li{
+    display: inline;
+    margin: 5px;
+}
+.headerThree{
+    width: 90%;
+    font-style: bold ;
+    padding: 20px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    color: rgb(34, 33, 31);
+    font-size: 20px;
+}
+.latest{
+    width: 80vw;
+    margin: 100px auto;
+    color: tomato;
+}
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .row .card{
+    width: 23%;
+    margin: 50px 10px;
+    text-align: center;
+    overflow: hidden;
+ }
+ .row .card p{
+    width: 100%;
+    padding: 10px 0 ;
+    color: black;
+ } 
+ .card .card-image {
+    width: 300px;
+    text-align: center;
+ }
+ .card #secondp{
+    width: 100%;
+    padding-top: 15px;
+}
+.cardImg{
+    width: 300px;
+}
+.card-action a{
+    padding-right: 10px;
+    text-decoration: none;
+}
+.footerOne{
+    text-align: center;
+    background: #131313;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.socialMedia{
+    height: 50%;
+    margin: 10px;
+}
+.socialmediaimg{
+    width: 50px;
+    margin: 0 10px ;
+}
+.footerLinks{
+    height: 50%;
+    margin: 30px;
+}
+.footerLinks ul li{
+    display: inline;
+    margin: 0 10px;
+}
+.footerLinks ul li a{
+    text-decoration: none;
+    color: #555;
+}
+.footerLinks ul li a:hover{
+    color: #fff;
+}
+.footerSecond{
+    background: black;
+    height: 110px;
+    color: white;
+    text-align: center;
+}
+.footer2p{
+    padding:45px 0 ;
+ }
+@media screen and (max-width: 1270px) {
+.firstNav .rightFirstNav{
+    display: none;
+}
+.navBottom .fixedNav .logoClass {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.row .card{
+    width: 40%;
+}
+}
+@media screen and (max-width: 1028px) {
+.sectionOne, .sectionSecond, .articleimage1{
+    width: 100%;
+}
+.row .card{
+    width: 100%;
+    margin: 20px auto;
+}
+.card .card-image{
+    width: 600px;
+    margin: 0 auto;
+}
+.cardImg{
+    width: 600px;
+}
+}
+@media screen and (max-width: 850px) {
+.row .card{
+    width: 100%;
+    margin: 20px auto;
+}
+.card .card-image{
+    width: 450px;
+    margin: 20px auto;
+}
+.cardImg{
+    width: 450px;
+}
+.navBottom .fixedNav .menu-toggle {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-left: 1px solid rgb(207, 207, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.navTop{
+    display: none;
+}
+.navBottom{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.fixedLeft{
+    display: none;
+}
+.searchIcon{
+    position: absolute;
+    right: 60px;
+}
+.sideNav{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    z-index: 3;
+    transition: transform 0.9s ease-in;
+    transform: translateX(100%);
+}
+.sideNav li{
+    margin: 20px;
+    list-style: none;
+
+}
+.sideNav li a{
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
+}
+.sideNav.active{
+    display: block;
+    transform: translateX(0%);
+}
+}
